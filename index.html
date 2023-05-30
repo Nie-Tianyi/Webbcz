@@ -17,17 +17,25 @@
         /*desktop*/
         @media screen and (min-width: 1024px){
             .container{
-                max-width: 1500px;
-
+                max-width: 1200px;
+                margin: 0 auto;
+                border-radius: 15px;
             }
         }
         /*tablet*/
         @media screen and (min-width: 450px){
-
+            .choice{
+                margin: 7px;
+                border-radius: 12px;
+            }
         }
         /*phone*/
         @media screen and (min-width: 340px){
+            .choice{
+                margin: 5px;
+                border-radius: 10px;
 
+            }
         }
 
         /*======page=====*/
@@ -129,6 +137,9 @@
         skip_button.addEventListener('click',function (){
             document.getElementById('word_audio').play();
         });
+
+        /*request data from a backend server*/
+        let xmlHttpRequest = new XMLHttpRequest();
 
 
 
